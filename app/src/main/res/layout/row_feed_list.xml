@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="feedlist"
+            type="com.online.vegas.demo.model.FeedListData" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_feedlist"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/textview"
+            fontPath="@string/font_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@{feedlist.title}"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/txtDesc"
+                style="@style/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="@{feedlist.description}" />
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:background="@color/colorBlack"
+                android:scaleType="fitXY"
+                app:imgRes="@{feedlist.imageHref}" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

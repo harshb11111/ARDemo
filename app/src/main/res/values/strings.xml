@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="font_regular">fonts/TitilliumWeb-Regular.ttf</string>
+    <string name="font_bold">fonts/TitilliumWeb-Bold.ttf</string>
+
+    <string name="strInternetConnectivity">Please make sure that you have internet connectivity</string>
+    <string name="strBackAgain">Please click on BACK again to exit</string>
+    <string name="strNoData">NO DATA</string>
+
+</resources>
